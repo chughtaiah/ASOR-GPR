@@ -45,7 +45,7 @@ GPML is third-party software and should be downloaded separately under its own l
 A portable pattern is:
 
 ```matlab
-repoRoot = fileparts(fileparts(mfilename('fullpath'))); % if scripts are in code/
+repoRoot = fileparts(fileparts(mfilename('fullpath'))); % if scripts are in Source Code/
 gpmlPath = fullfile(repoRoot, 'external', ...
     'gpml-matlab-v4.2-2018-06-11');
 dataDir = fullfile(repoRoot, 'data');
