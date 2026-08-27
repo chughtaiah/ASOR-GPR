@@ -16,7 +16,7 @@ GPML is third-party software and should be downloaded separately under its own l
 ```text
 .
 ├── README.md
-├── code/
+├── Source Code/
 │   ├── All_Methods_Timing_Simulation.m
 │   ├── Out_prob_sweep_sup_results.m
 │   ├── Outlier_Probability_Sweep_Simulation.m
