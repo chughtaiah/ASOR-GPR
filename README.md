@@ -93,7 +93,7 @@ Confirm that all methods complete and that the `.mat`, `.csv`, `.png`, `.eps`, a
 Start MATLAB in the repository root and run each script independently:
 
 ```matlab
-cd code
+cd('Source Code')
 
 run('Outlier_Probability_Sweep_Simulation.m')
 run('Out_prob_sweep_sup_results.m')
