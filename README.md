@@ -125,7 +125,7 @@ run('Real_Data_Simulation_2.m')
 
 The current synthetic composite contains one Gaussian case and three uniform cases. After running `Out_prob_sweep_sup_results.m`, use the following EPS files:
 
-| Supplementary panel | Generated file | Suggested manuscript filename |
+| Supplementary panel | Generated file | Manuscript filename |
 |---|---|---|
 | Gaussian, variance 10 | `01_Gaussian_Var10/Gaussian_Var10_pout_sweep_rmse_boxplot.eps` | `G_10.eps` |
 | Uniform \([-10,10]\) | `05_Uniform_neg10_10/Uniform_neg10_10_pout_sweep_rmse_boxplot.eps` | `U_neg10_pos10.eps` |
@@ -136,7 +136,7 @@ The Gaussian-variance-50 case is an additional robustness check and can be omitt
 
 After running `Real_Data_Supplementary_Results.m`, the eight case folders map to the manuscript files as follows:
 
-| Case folder | Generated EPS file | Suggested manuscript filename |
+| Case folder | Generated EPS file | Manuscript filename |
 |---|---|---|
 | `01_AirQuality_Uniform_neg5_5` | `AirQuality_Uniform_neg5_5_pout_sweep_boxplot.eps` | `AQ_U_neg5_5pos.eps` |
 | `02_AirQuality_Gaussian_Var10` | `AirQuality_Gaussian_Var10_pout_sweep_boxplot.eps` | `AQ_G_10.eps` |
