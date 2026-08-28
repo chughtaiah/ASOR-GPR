@@ -121,40 +121,6 @@ run('Real_Data_Simulation_2.m')
 | `Real_Data_Simulation_1.m` | Optional Air Quality diagnostic | Uniform \([-5,15]\) contamination | Single-case results and diagnostic outputs |
 | `Real_Data_Simulation_2.m` | Optional Energy Efficiency diagnostic | Gaussian contamination with variance 25 | Single-case results and RMSE figure |
 
-## Reproducing the supplementary figures
-
-The current synthetic composite contains one Gaussian case and three uniform cases. After running `Out_prob_sweep_sup_results.m`, use the following EPS files:
-
-| Supplementary panel | Generated file
-|---|---|
-| Gaussian, variance 10 | `01_Gaussian_Var10/Gaussian_Var10_pout_sweep_rmse_boxplot.eps` 
-| Uniform \([-10,10]\) | `05_Uniform_neg10_10/Uniform_neg10_10_pout_sweep_rmse_boxplot.eps`
-| Uniform \([0,15]\) | `03_Uniform_0_15/Uniform_0_15_pout_sweep_rmse_boxplot.eps`
-| Uniform \([-15,0]\) | `04_Uniform_neg15_0/Uniform_neg15_0_pout_sweep_rmse_boxplot.eps`
-
-The Gaussian-variance-50 case is an additional robustness check and can be omitted from the four-panel figure.
-
-After running `Real_Data_Supplementary_Results.m`, the eight case folders map to the manuscript files as follows:
-
-| Case folder | Generated EPS file
-|---|---|
-| `01_AirQuality_Uniform_neg5_5` | `AirQuality_Uniform_neg5_5_pout_sweep_boxplot.eps` 
-| `02_AirQuality_Gaussian_Var10` | `AirQuality_Gaussian_Var10_pout_sweep_boxplot.eps` 
-| `03_AirQuality_Uniform_0_15` | `AirQuality_Uniform_0_15_pout_sweep_boxplot.eps` 
-| `04_AirQuality_Uniform_neg15_0` | `AirQuality_Uniform_neg15_0_pout_sweep_boxplot.eps`
-| `05_EnergyEfficiency_Uniform_neg5_5` | `EnergyEfficiency_Uniform_neg5_5_pout_sweep_boxplot.eps` 
-| `06_EnergyEfficiency_Gaussian_Var10` | `EnergyEfficiency_Gaussian_Var10_pout_sweep_boxplot.eps` 
-| `07_EnergyEfficiency_Uniform_0_15` | `EnergyEfficiency_Uniform_0_15_pout_sweep_boxplot.eps` 
-| `08_EnergyEfficiency_Uniform_neg15_0` | `EnergyEfficiency_Uniform_neg15_0_pout_sweep_boxplot.eps`
-
-For the runtime figure, copy or rename:
-
-```text
-All_methods_fit_time_boxplot_linear.eps  ->  Extensive_timing.eps
-```
-
-The scripts retain their original generated filenames; the right-hand names above are only the names expected by the manuscript LaTeX source.
-
 ## Reproducibility notes
 
 - The scripts initialize the random-number generator and store settings with the numerical results.
